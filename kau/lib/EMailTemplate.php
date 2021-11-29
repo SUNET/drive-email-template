@@ -40,8 +40,8 @@ class EMailTemplate extends ParentTemplate {
 		// for the welcome email we omit the left button ("Install client") and only show the button that links to the instance
 		if ($this->emailId === 'settings.Welcome') {
 			$urlLeft = 'https://kau.drive.sunet.se/index.php/login?redirect_url=&direct=1';
-			$textLeft = 'Go to KAU Sunet Drive';
-			$plainTextLeft = 'Go to KAU Sunet Drive';
+                        $textLeft = 'Gå till Sunet Drive';
+                        $plainTextLeft = 'Gå till Sunet Drive';
 			parent::addBodyButton($textLeft, $urlLeft, $plainTextLeft);
 			return;
 		}
