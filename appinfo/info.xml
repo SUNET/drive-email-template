@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <info>
-	<id>Drive_email_template</id>
+	<id>drive_email_template</id>
 	<name>Drive E-Mail Template</name>
 	<description>Drive E-Mail Template for Nextcloud</description>
 	<licence>AGPL</licence>
