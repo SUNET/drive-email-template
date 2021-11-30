@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <info>
-	<id>kau_email_template</id>
-	<name>KAU E-Mail Template</name>
-	<description>KAU E-Mail Template for Nextcloud</description>
+	<id>Drive_email_template</id>
+	<name>Drive E-Mail Template</name>
+	<description>Drive E-Mail Template for Nextcloud</description>
 	<licence>AGPL</licence>
 	<author>Marius Blüm, Richard Freitag</author>
 	<version>0.1</version>
-	<namespace>KauEmailTemplate</namespace>
+	<namespace>DriveEmailTemplate</namespace>
 
 	<category>customization</category>
 

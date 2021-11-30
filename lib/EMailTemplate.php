@@ -21,7 +21,7 @@
  *
  */
 
-namespace OCA\KauEmailTemplate;
+namespace OCA\DriveEmailTemplate;
 
 use OC\Mail\EMailTemplate as ParentTemplate;
 
