@@ -24,27 +24,19 @@
 namespace OCA\DriveEmailTemplate;
 
 use OC\Mail\EMailTemplate as ParentTemplate;
-use \OCP\IConfig;
 
 class EMailTemplate extends ParentTemplate {
 
-        private $config;
-        private $appName;
-
-        public function __construct(IConfig $config, $appName){
-            $this->config = $config;
-	    $this->appName = $appName;
-	}
-
 	public function getTextLeft(){
-		return $this->config->getSystemValue('drive_email_template_text_left', 'Gå till Sunet Drive');
+	       return \OC::$server->getConfig()->getSystemValue('drive_email_template_text_left', 'Gå till Sunet Drive');
 	}
 	public function getPlainTextLeft(){
-		return $this->config->getSystemValue('drive_email_template_plain_text_left', 'Gå till Sunet Drive');
+	       return \OC::$server->getConfig()->getSystemValue('drive_email_template_plain_text_left', 'Gå till Sunet Drive');
 	}
 	public function getUrlLeft(){
-		return $this->config->getSystemValue('drive_email_template_url_left', 'https://drive.sunet.se/');
+	       return \OC::$server->getConfig()->getSystemValue('drive_email_template_url_left', 'https://drive.sunet.se/');
 	}
+
 	/**
 	 * the following method overwrites the add button group method and
 	 * manipulates the result for the welcome email to only include one button
@@ -57,9 +49,9 @@ class EMailTemplate extends ParentTemplate {
 
 		// for the welcome email we omit the left button ("Install client") and only show the button that links to the instance
 		if ($this->emailId === 'settings.Welcome') {
-			$urlLeft = getUrlLeft();
-                        $textLeft = getTextLeft();
-                        $plainTextLeft = getPlainTextLeft();
+			$urlLeft = $this->getUrlLeft();
+			$textLeft = $this->getTextLeft();
+			$plainTextLeft = $this->getPlainTextLeft();
 			parent::addBodyButton($textLeft, $urlLeft, $plainTextLeft);
 			return;
 		}

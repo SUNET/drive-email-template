@@ -20,10 +20,10 @@
 
 	<repair-steps>
 		<install>
-			<step>OCA\EmailTemplateExample\Migration\SetEmailTemplate</step>
+			<step>OCA\DriveEmailTemplate\Migration\SetEmailTemplate</step>
 		</install>
 		<uninstall>
-			<step>OCA\EmailTemplateExample\Migration\UnsetEmailTemplate</step>
+			<step>OCA\DriveEmailTemplate\Migration\UnsetEmailTemplate</step>
 		</uninstall>
 	</repair-steps>
 </info>

@@ -21,9 +21,9 @@
  *
  */
 
-namespace OCA\EmailTemplateExample\Migration;
+namespace OCA\DriveEmailTemplate\Migration;
 
-use OCA\EmailTemplateExample\EMailTemplate;
+use OCA\DriveEmailTemplate\EmailTemplate;
 use OCP\IConfig;
 use OCP\Migration\IOutput;
 use OCP\Migration\IRepairStep;
