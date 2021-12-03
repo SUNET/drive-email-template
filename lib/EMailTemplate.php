@@ -1,9 +1,12 @@
 <?php
 /**
  * @copyright 2018, Marius Blüm <marius@nextcloud.com>
+ * @copyright 2021, Richard Freitag <freitag@sunet.se>
+ * @copyright 2021, Mikael Nordin <kano@sunet.se>
  *
  * @author Marius Blüm <marius@nextcloud.com>
  * @author Richard Freitag <freitag@sunet.se>
+ * @author Mikael Nordin <kano@sunet.se>
  * @license GNU AGPL version 3 or any later version
  *
  * This program is free software: you can redistribute it and/or modify

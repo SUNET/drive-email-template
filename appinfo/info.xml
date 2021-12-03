@@ -4,8 +4,8 @@
 	<name>Drive E-Mail Template</name>
 	<description>Drive E-Mail Template for Nextcloud</description>
 	<licence>AGPL</licence>
-	<author>Marius Blüm, Richard Freitag</author>
-	<version>0.1</version>
+	<author>Marius Blüm, Richard Freitag, Mikael Nordin</author>
+	<version>1.0.0</version>
 	<namespace>DriveEmailTemplate</namespace>
 
 	<category>customization</category>
